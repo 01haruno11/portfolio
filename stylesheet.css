@@ -112,11 +112,12 @@ header{
     font-size:70px;
 }
 .about-container{
-    margin:0 100px 50px 100px;
+    margin:0 100px 50px ;
     padding:0;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: left;
 }
 .item{
     width: 45em;  
@@ -124,6 +125,7 @@ header{
 .name{
     font-size:2rem;
     margin-top:0;
+    text-align: center;
 }
 .introduction p{
     font-size:1.5rem;
@@ -394,17 +396,16 @@ footer p{
         display: block;
       font-size:16px;
       margin-bottom:40px;
-      width:300px;
+      width:270px
     }
     .item{
          width: 200px;
     }
     .introduction p{
         font-size:15px;
-        text-align:center;
-        width:330px;
         position:relative;
-        right:20%;
+        right:10%;
+        
       
     }
     .about-title span{
