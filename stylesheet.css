@@ -8,6 +8,7 @@ body{
     font-family:"Montserrat","ヒラギノ角ゴシック";
     line-height:1.7;
     color:black;
+    margin:0;
 }
 a{
     text-decoration:none;
@@ -117,20 +118,15 @@ header{
     justify-content: center;
     align-items: center;
 }
-    .item{
-        width: 45em;
-        
-   }
-   .introduction{
-       width:600px;
-       text-align: center;
-   }
-   .name{
-       font-size:2rem;
-       margin-top:0;
-   }
-   .introduction p{
-       font-size:1.5rem;
+.item{
+    width: 45em;  
+}
+.name{
+    font-size:2rem;
+    margin-top:0;
+}
+.introduction p{
+    font-size:1.5rem;
 }
 /*Skills*/
 .skills-wrapper{
@@ -352,20 +348,18 @@ footer p{
 /*モバイル版*/
 @media(max-width:600px){
     /*Header*/
-    .main-nav{
-        font-size:0.75rem;
-        margin-top:10px;
-    }
     .main-nav li{
-        margin:0 30px;
+      font-size:0.75rem;
+        margin:0 20px;
          position:relative;
-         bottom:26px;
-        
+         bottom:30px;
+        right:20px;
     }
     .page-header{
         flex-direction:column;
         align-items: center;
         height:67px;
+      margin:0 auto;
     }
     .logo{
        display:none;
@@ -384,6 +378,7 @@ footer p{
     .big-bg{
         background-size:contain;
         background-repeat:no-repeat;
+      
     }
     #home{
          background-image: url(images/sitetop2.png);
@@ -397,13 +392,20 @@ footer p{
     }
     .about-container{
         display: block;
+      font-size:16px;
+      margin-bottom:40px;
+      width:300px;
     }
     .item{
          width: 200px;
     }
     .introduction p{
-        font-size:18px;
+        font-size:15px;
         text-align:center;
+        width:330px;
+        position:relative;
+        right:20%;
+      
     }
     .about-title span{
         font-size:40px;
@@ -416,7 +418,7 @@ footer p{
     /*Skills*/
     .skills-wrapper{
         margin:0 auto;
-        height:650px;
+        height:550px;
     }
     .skills-container{
         display: block;
@@ -429,21 +431,31 @@ footer p{
         font-size:40px;
     }
     .pc-icon{
-        transform:translateX(90px);
+        position:relative;
+      left:25%;
         width:200px;
     }
-    .skills h2{
-        font-size:25px;
+    .skills1{
+        font-size:23px;
     }
-    .skills p{
-        font-size:20px;
+    .skills2{
+        font-size:18px;
+    }
+  .skills3{
+        font-size:23px;
+    }
+    .skills4{
+        font-size:18px;
     }
     /*Works*/
 .works-wrapper{
-    height:450px;
+    height:600px;
 }
 .works-container{
     display: block;
+    position:absolute;
+    right:5%;
+  
 }
 .works-title{
     font-size: 30px;
@@ -452,20 +464,24 @@ footer p{
     font-size: 40px;
 }
 .box{
-display:block;
+    display:block;
 }
 .site-title{
-    font-size:13px;
-    margin-top:0px;
-    margin-left:20px;
-    transform:translate(0);
+    font-size:16px;
+    margin-bottom:40px;
+    width:300px;
+
 }
 .site-title2{
-    font-size:13px;
-    margin-top:0px;
-    margin-left:40px;
-    transform:translate(0);
+   font-size:16px;
+    margin-bottom:40px;
+    width:300px;
+    
 }
+  .box{
+    margin-top:20px;
+    width:70%;
+  }
 /*Contact*/
 .contact{
     height:550px;
