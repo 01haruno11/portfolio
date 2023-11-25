@@ -1,473 +1,97 @@
-@charset "UTF-8";
+<!DOCTYPE html>
 
-/*共通部分*/
-html{
-    font-size:100%;
-}
-body{
-    font-family:"Montserrat","ヒラギノ角ゴシック";
-    line-height:1.7;
-    color:black;
-    margin:0;
-}
-a{
-    text-decoration:none;
-}
-img{
-    max-width:100%;
-}
-/*ヘッダー*/
-.logo{
-    width:3em;
-    transform: translateY(-5px);
-   
-
-}
-.main-nav{
-    display:flex;
-    font-size:1.5rem;
-    text-transform:uppercase ;
-    margin-top:1em;
-    list-style:none;
-    text-transform: none;
-}
-.main-nav li{
-    margin-left:36px;
-    margin-top:25px;
-    margin-right:20px;
-}
-.main-nav a{
-    color:#704E4E;
-}
-.main-nav a:hover{
-    color:#B3ADA0;
-}
-.page-header{
-    display:flex;
-    justify-content:space-between;
-    margin:0 auto;
-    padding: 0 4%;
-    background-color:#59b9C6;
-    height:8em;  
-    width:cover;
-}
-header{
-    position: fixed;
-    top: 0;
-    left:0;
-    width:100%;
-    padding:20px 40px;
-    box-sizing:border-box;
-    z-index: 999;
-}
-
-/*HOME*/
-.home-contents{ 
-    position:relative;
-    width:100%;
-    min-height:100vh;
-    background-image:url(images/sitetop.png);
-    background-position:center top;
-    background-size:cover;
-    margin-top:100px;
-    
-}
-.big-bg{
-   position: absolute;
-    top:50%;
-    right:0;
-    transform:translateY(-50%);
-    -webkit-transform:translateY(-50%);
-}
-/*見出し*/
-.page-title{
-    font-size:4rem;
-    font-family:"Montserrat";
-    font-weight: bolder;
-    color:#fff;
-    text-shadow: #fff 2px 0, #fff -2px 0, #fff 0 -2px, #fff 0 2px, #fff 2px 2px, #fff -2px 2px, #fff 2px -2px, #fff -2px -2px, #fff 1px 2px, #fff -1px 2px, #fff 1px -2px, #fff -1px -2px, #fff 2px 1px, #fff -2px 1px, #fff 2px -1px, #fff -2px -1px, rgba(0, 0, 0, .5) 3px 3px 3px;
-}
- .page-title{
-    text-transform: none;
-}
-/*About me*/
-.about-wrapper{
-   background-size:cover ;
-   text-align: center;
-}
-.about-title span{
-    color: #59b9C6;
-    text-decoration:underline;
-    font-size:110px;
-    opacity:0.6;
-    display:inline-block;
-}
-.about-title{
-    font-size:70px;
-}
-.about-container{
-    padding:0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-}
-.name{
-    font-size:2rem;
-    margin-top:0;
-    text-align: center;
-}
-.introduction p{
-    font-size:2rem;
-}
-/*Skills*/
-.skills-wrapper{
-    text-align: center;
-}
-.skills-title{
-    text-align: center;
-    font-size: 70px;
-}
-.skills-title span{
-    color: #59b9C6;
-    text-decoration:underline;
-    font-size:110px;
-    opacity:0.6;
-}
-.skills-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.skills1{
-    font-size:2.5rem;
-    font-weight: bold;
-}
-.skills2{
-    font-size:2.5rem;
-}
-.skills3{
-    font-size:2.5rem;
-    font-weight: bold;
-}
-.skills4{
-    font-size:2.5rem;
-}
-
-/*Works*/
-.works-wrapper{
-    text-align: center;
-}
-.works-title{
-    text-align: center;
-    font-size: 70px;
-}
-.works-title span{
-    color: #59b9C6;
-    text-decoration:underline;
-    font-size:110px;
-    opacity:0.6;
-}
-.works-container{
-    display: flex;
-    justify-content:center;
-}
-
-.box{
-    width:40%;
-    margin:0 auto;
-} 
-.website{
-    padding:20px;
-    background-color:#f4ecdb ;
-}
-.website:hover{
-    background-color: #704E4E;
-    opacity:0.7;
-}
-.site-title{
-    font-size:20px;
-    margin-top:5px;
-    margin-bottom:50px;
-}
-.site-title2{
-    font-size:20px;
-    margin-top:5px;
-    margin-bottom:50px;
-}
-/*Contact*/
-.contact{
-    text-align:center;
-}
-.contact-title{
-    text-align: center;
-    font-size: 70px;
-}
-.contact-title span{
-    color: #59b9C6;
-    text-decoration:underline;
-    font-size:110px;
-    opacity:0.6;
-}
-.contact-container{
-    max-width: 900px;
-    width: 100%;
-    margin: 0 auto;
-    position:relative;
-    bottom: 5em;
-}
-form div{
-    margin-bottom:14px;
-}
-label{
-    font-size:1.125rem;
-    margin-bottom:10px;
-    display:block;
-}
-input[type="text"],input[type="email"],textarea{
-    background-color:#f4ecdb ;
-    border:none;
-    border-radius: 0;
-    padding:10px;
-    margin:10px auto;
-}
-input[type="text"],input[type="email"]{
-    width:100%;
-    max-width:736px;
-   font-size:1.2rem;
-
-}
-textarea{
-    width:100%;
-    max-width:736px;
-    height:300px;
- 
-}
-input[type="submit"]{
-    border:none;
-    cursor:pointer;
-    line-height:1.5;
-    width:200px;
-    
-}
-input:focus{
-    outline:#704E4E 2px solid;
-    background-color: #B3ADA0;
-  }
-textarea:focus{
-    outline:#704E4E 2px solid;
-}
-
-form {
-  width: 50%;
-  margin: 10% auto;
-  min-width: 9rem;
-}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Nagao Haruno's Portfolio</title>
+    <meta name="description" contents="Nagao Harunoのポートフォリオ">
+    <link rel="icon" type="image/png" href="images/logo.png">
   
-input, textarea {
-  width: 100%;
-  border: none;
-  margin: 0.5rem 0;
-  padding: 0.5rem 1rem;
-  border-radius: 0rem;
-  background: #f4ecdb 
-}
-  
-  &[type=submit] {
-    color: #fff;
-    width: auto;
-    float: right;
-  }
 
-  &::placeholder {
-    color: darken(#f9f9f9, 50%);
-  }
-
-textarea {
-  height: 10rem;
-}
-.captcha {
-  float:left;
-}
-  input[name=question] {
-    width: 4rem;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    text-align: right;
-    padding-right: 0;
-  }
-  [name=captcha] {
-    width: 5rem;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    padding-left: 0.5rem;
-    &::placeholder {
-      text-align: center;
-    }
-  }
-  input::placeholder{
-    font-family:Montserrat;
-     font-size:15px;
-   }
-   textarea::placeholder{
-    font-family:Montserrat;
-     font-size:15px;
-   }   
-
-
-/*footer*/
-footer{
-    background: #59b9c6;
-    text-align:center;
-    padding:10px 0;
-    width:100%;
-    
-}
-footer p{
-    color:#704E4E;
-    font-size:0.875rem;
-}
-
-/*モバイル版*/
-@media(max-width:600px){
-    /*Header*/
-    .main-nav li{
-      font-size:0.75rem;
-        margin:0 20px;
-         position:relative;
-         bottom:30px;
-        right:20px;
-    }
-    .page-header{
-        flex-direction:column;
-        align-items: center;
-        height:67px;
-      margin:0 auto;
-    }
-    .logo{
-       display:none;
-    }
-    
-    /*見出し*/
-    .page-title{
-        font-size:1.75rem;
-        text-shadow: none;
-        -webkit-text-stroke: 0.5px #704E4E;
-        position:relative;
-        top:30px;
-    }
-    
-    /*大きい背景*/
-    .big-bg{
-        background-size:contain;
-        background-repeat:no-repeat;
+    <!--css-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.minn.css">
+    <link href="https://fonts.googleapis.com/css?familyPhilosopher">
+    <link rel="stylesheet" href="stylesheet.css">  
+    <meta name="viewport" content="width=device-width,initial=1">
+  </head>
+    <body>
+    <!--header-->
+       <header class="page-header wrapper">
+        <h1><a href="index.html"><img class="logo" src="images/logo.png"alt=ホーム></a></h1>
+        <nav class="header-nav">
+          <ul class="main-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>       
+        </nav>
+       </header>
+     <!--メインコンテンツ--> 
+     <main class="top">
+       <!--ファーストビュー-->
+       <section class="home-contents">
+        <div id="home" class="big-bg">
+        <h2 class="page-title">Haruno's Portfolio</h2>
+        </div>
+       </section>
+      <!--About-->
+      <section class="about-wrapper" id="about">
+          <h2 class="about-title"><span>01</span>About me</h2>
+          <div class="about-container">
+           <div class="item">
+             <img src="images/myphoto.png" alt="プロフィール写真">
+           </div>
+           <article class="introduction">
+             <p class="name">永尾 春乃</p>
+             <p class="introduction-myself">山口県で2000年1月に生まれました。<br>前職は国際線客室乗務員で、現在はWeb<br>デザインをスクールで学んでいます。<br>趣味は旅行、パン屋巡りで新しい物を<br>見つけることが好きです。<br>今後たくさんの新しい物を見つけ出し、<br>創り出していきます！</p>
+           </article>
+          </div>
+       </section>
       
-    }
-    #home{
-         background-image: url(images/sitetop2.png);
-         min-height:30vh;
-        }
-    
-    /*About me*/
-    .about-wrapper{
-        text-align:center;
-    }
-    .about-container{
-        display: block;
-      font-size:16px;
-      margin-bottom:40px;
-      width:270px
-    }
-    .item{
-         width: 200px;
-    }
-    .introduction p{
-        font-size:15px;
-        position:relative;
-        right:10%;
-        
-      
-    }
-    .about-title span{
-        font-size:40px;
-        transform:translateX(0px);
-    }
-    .about-title{
-        font-size:30px;
-    }
-        
-    /*Skills*/
-    .skills-wrapper{
-        margin:0 auto;
-    }
-    .skills-container{
-        display: block;
-    }
-    .skills-title{
-        text-align: center;
-        font-size: 30px;
-    }
-    .skills-title span{
-        font-size:40px;
-    }
-    .pc-icon{
-        position:relative;
-      left:25%;
-        width:200px;
-    }
-    .skills1{
-        font-size:23px;
-    }
-    .skills2{
-        font-size:18px;
-    }
-  .skills3{
-        font-size:23px;
-    }
-    .skills4{
-        font-size:18px;
-    }
-    /*Works*/
-.works-container{
-    display: block;
-    position:absolute;
-    right:5%;
-  
-}
-.works-title{
-    font-size: 30px;
-}
-.works-title span{
-    font-size: 40px;
-}
-.box{
-    display:block;
-}
-.site-title{
-    font-size:16px;
-    margin-bottom:40px;
-    width:300px;
+      <!--Skills-->
+      <section class="skills-wrapper" id="skills">
+          <h2 class="skills-title"><span>02</span>Skills</h2>
+          <div class="skills-container">
+            <div class="pc-icon"><img src="images/pc-icon.png" alt="PCアイコン"></div>
+           <div class="skills-contents">
+             <h2 class="skills1">デザイン</h2>
+             <p class="skills2">WIX,Wordpress,Figma,Canva</p>
+             <h2 class="skills3">使用言語</h2>
+             <p class="skills4">HTML,.CSS</p>
+           </div>
+          </div>
+      </section>
 
-}
-.site-title2{
-   font-size:16px;
-    margin-bottom:40px;
-    width:300px;
-    
-}
-  .box{
-    margin-top:20px;
-    width:70%;
-  }
-/*Contact*/
-.contact-title{
-    font-size: 30px;
-}
-.contact-title span{
-    font-size:40px;
-}
-.contact-container{
-    position:relative;
-    bottom: 0em;
-}
-}
+      <!--Works-->
+      <section class="works-wrapper" id="works">
+          <h2 class="works-title"><span>03</span>Works</h2>
+          <div class="works-container">
+            <div class="box"><a href="https://01haruno11.wixsite.com/my-site-1"><img  class="website" src="images/website1.jpg"></a><p class="site-title">コンサルティング会社架空サイト</p></div>
+            <div class="box"><a href="https://01haruno11.github.io/mame/index.html"><img class="website" src="images/website2.png"></a><p class="site-title2">カフェ架空サイト</p></div>
+          </div>
+      </section>
+        
+      <!--Contact-->
+      <section class="contact" id="contact">
+          <h2 class="contact-title"><span>04</span>Contact</h2>
+       <form action="mail.php" method="post">
+        <div class="contact-container">
+          <div class="contact-name"><input type="text" placeholder="Name" name="name" required></div>
+          <div class="contact-email"><input type="email" placeholder="Email" name="email" required></div>
+          <div class="contact-message"><textarea placeholder="Message" name="message" required></textarea></div>
+          <div class="contact-submit"><input type="submit" value="Send"></div>
+        </div>
+       </form>
+      </section>
+    </main>
+      
+      <footer>
+        <P><small>All Rights Reserved.&copy;Haruno Nagao </small></P>
+      </div>
+      </footer>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <script src="js/slick.min.js"></script>
+     <script src="js/script.js"></script>
+  </body>
+</html>
