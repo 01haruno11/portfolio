@@ -18,16 +18,16 @@ img{
 }
 /*ヘッダー*/
 .logo{
-    width:70px;
+    width:3em;
     transform: translateY(-5px);
    
 
 }
 .main-nav{
     display:flex;
-    font-size:1.25rem;
+    font-size:1.5rem;
     text-transform:uppercase ;
-    margin-top:14px;
+    margin-top:1em;
     list-style:none;
     text-transform: none;
 }
@@ -48,7 +48,7 @@ img{
     margin:0 auto;
     padding: 0 4%;
     background-color:#59b9C6;
-    height:100px;  
+    height:8em;  
     width:cover;
 }
 header{
@@ -62,9 +62,22 @@ header{
 }
 
 /*HOME*/
-.home-contents{
-    text-align: right;
-    margin-top:10%;
+.home-contents{ 
+    position:relative;
+    width:100%;
+    min-height:100vh;
+    background-image:url(images/sitetop.png);
+    background-position:center top;
+    background-size:cover;
+    margin-top:100px;
+    
+}
+.big-bg{
+   position: absolute;
+    top:50%;
+    right:0;
+    transform:translateY(-50%);
+    -webkit-transform:translateY(-50%);
 }
 /*見出し*/
 .page-title{
@@ -72,32 +85,13 @@ header{
     font-family:"Montserrat";
     font-weight: bolder;
     color:#fff;
-    position:relative;
-    right:30px;
-    top:200px;
-    padding-top:1.5em;
     text-shadow: #fff 2px 0, #fff -2px 0, #fff 0 -2px, #fff 0 2px, #fff 2px 2px, #fff -2px 2px, #fff 2px -2px, #fff -2px -2px, #fff 1px 2px, #fff -1px 2px, #fff 1px -2px, #fff -1px -2px, #fff 2px 1px, #fff -2px 1px, #fff 2px -1px, #fff -2px -1px, rgba(0, 0, 0, .5) 3px 3px 3px;
 }
-
-
-/*大きな背景画像*/
-.big-bg{
-    background-size:cover;
-    background-position: center top;
-    width:100%;
-    margin-top:0;
-}
-#home{
-    background-image: url(images/sitetop.png);
-    min-height: 100vh;
-
-}
-#home .page-title{
+ .page-title{
     text-transform: none;
 }
 /*About me*/
 .about-wrapper{
-   height:55em;
    background-size:cover ;
    text-align: center;
 }
@@ -112,15 +106,11 @@ header{
     font-size:70px;
 }
 .about-container{
-    margin:0 100px 50px ;
     padding:0;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: left;
-}
-.item{
-    width: 45em;  
 }
 .name{
     font-size:2rem;
@@ -128,12 +118,11 @@ header{
     text-align: center;
 }
 .introduction p{
-    font-size:1.5rem;
+    font-size:2rem;
 }
 /*Skills*/
 .skills-wrapper{
     text-align: center;
-    height:780px;
 }
 .skills-title{
     text-align: center;
@@ -150,29 +139,24 @@ header{
     justify-content: center;
     align-items: center;
 }
-.pc-icon{
-    width:25em;
-}
 .skills1{
-    font-size:35px;
+    font-size:2.5rem;
     font-weight: bold;
 }
 .skills2{
-    font-size:25px;
+    font-size:2.5rem;
 }
 .skills3{
-    font-size:35px;
+    font-size:2.5rem;
     font-weight: bold;
 }
 .skills4{
-    font-size:25px;
+    font-size:2.5rem;
 }
 
 /*Works*/
 .works-wrapper{
     text-align: center;
-    height:550px;
-
 }
 .works-title{
     text-align: center;
@@ -214,12 +198,10 @@ header{
 /*Contact*/
 .contact{
     text-align:center;
-    height:45em;
 }
 .contact-title{
     text-align: center;
     font-size: 70px;
-    margin-bottom:0px;
 }
 .contact-title span{
     color: #59b9C6;
@@ -284,7 +266,6 @@ form {
   
 input, textarea {
   width: 100%;
-  max-width: 100%;
   border: none;
   margin: 0.5rem 0;
   padding: 0.5rem 1rem;
@@ -390,7 +371,6 @@ footer p{
     /*About me*/
     .about-wrapper{
         text-align:center;
-        height:600px;
     }
     .about-container{
         display: block;
@@ -419,7 +399,6 @@ footer p{
     /*Skills*/
     .skills-wrapper{
         margin:0 auto;
-        height:550px;
     }
     .skills-container{
         display: block;
@@ -449,9 +428,6 @@ footer p{
         font-size:18px;
     }
     /*Works*/
-.works-wrapper{
-    height:600px;
-}
 .works-container{
     display: block;
     position:absolute;
@@ -484,9 +460,6 @@ footer p{
     width:70%;
   }
 /*Contact*/
-.contact{
-    height:550px;
-}
 .contact-title{
     font-size: 30px;
 }
